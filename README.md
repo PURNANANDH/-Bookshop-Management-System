@@ -1,4 +1,4 @@
-                                      # BookshopManagementSystem
+ # BookshopManagementSystem
 Develop a C++ Bookshop Management System using inheritance and polymorphism. The system allows adding textbooks and novels, searching by title or ISBN, and displaying books. Textbooks have a subject and novels have a genre. The program provides a menu-based interface with options to add, search, display, and exit.
 
 The system should allow the user to perform various operations such as adding textbooks and novels to the bookshop, searching for books by title or ISBN, and displaying all the books in the bookshop.
@@ -7,7 +7,7 @@ The system should utilize inheritance and polymorphism concepts to model differe
 
 The program should provide a menu-based interface where the user can select different options. The menu should include the following options:
 
-FEATURES:
+                                                         FEATURES
 
 =>Add Textbook: This option allows the user to add a new textbook to the bookshop. The user should be prompted to enter the title, author, ISBN, price, quantity, and subject of the textbook.
 
@@ -19,8 +19,15 @@ FEATURES:
 
 =>Exit: This option terminates the program.
 
+                                             EXPLANATION
+                                             
+        The code begins by including the necessary header files for input/output and strings. Three classes are defined: Book, Textbook, and Novel. The Book class is the base class, while Textbook and Novel are derived classes. The base class Book has member variables for the title, author, ISBN, price, and quantity of a book. It also has member functions to display book information and search for a book based on the title. The derived classes Textbook and Novel inherit from the Book class and add additional member variables and display functions specific to their respective types.
 
-                                             CODE
+     The addBook function is defined to add a book to the bookshop. It takes an array of pointers to Book objects, the current count of books, and a pointer to the book to be added. It adds the book to the array and increments the book count. The searchBookByTitle function is defined to search for a book in the bookshop based on its title or keyword. It takes the array of pointers to Book objects, the current count of books, and the search title as input. It iterates through the array and checks if each book matches the search title. If a match is found, it displays the book information. If no match is found, it displays a "Book not found" message. The displayBooks function is defined to display information about all the books in the bookshop. It takes the array of pointers to Book objects and the current count of books as input. It iterates through the array and calls the displayInfo function for each book, which displays the book information.
+     
+     In the main function, a constant MAX_BOOKS is defined to represent the maximum number of books that can be stored in the bookshop. An array of pointers to Book objects, books, is declared to store the books. The bookCount variable keeps track of the current count of books in the bookshop. The do-while loop is used to display the main menu of the bookshop management system and handle user input until the user chooses to exit (option 5).Inside the loop, the user is prompted to enter their choice. Based on the choice, the corresponding case is executed. Case 1 handles adding a textbook. The user is prompted to enter the details of the textbook (title, author, ISBN, price, quantity, and subject), and a Textbook object is created with the provided information. The addBook function is called to add the textbook to the bookshop. Case 2 handles adding a novel. Similar to case 1, the user is prompted to enter the details of the novel (title, author, ISBN, price, quantity, and genre), and a Novel object is created with the provided information. The addBook function is called to add the novel to the bookshop. Case 3 handles searching for a book by title. The user is prompted to enter the title or keyword to search. The searchBookByTitle function is called to search for books matching the search title and display their information. Case 4 handles displaying all books. The displayBooks function is called to display the information of all the books in the bookshop. Case 5 is the exit case, which simply displays an exit message and breaks out of the loop. After the loop, the delete operator is used to free the memory allocated for
+     
+                                                  CODE
 
 ```
 
@@ -218,5 +225,122 @@ int main() {
     return 0;
 }
 ```
+                                             SAMPLE INPUT
+ 
+1
+Introduction to Algorithms
+Thomas H. Cormen
+978-0262033848
+59.99
+10
+Computer Science
 
+ 2
+To Kill a Mockingbird
+Harper Lee
+978-0061120084
+9.99
+5
+Fiction
 
+3
+Introduction to Algorithms
+
+3
+Thomus
+
+4
+
+5
+                                              EXPECTED OUTPUT
+                                              
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 1
+Enter book title: Introduction to Algorithms
+Enter author name: Thomas H. Cormen
+Enter ISBN: 978-0262033848
+Enter price: 59.99
+Enter quantity: 10
+Enter subject: Computer Science
+
+Book added successfully!
+
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 2
+Enter book title: To Kill a Mockingbird
+Enter author name: Harper Lee
+Enter ISBN: 978-0061120084
+Enter price: 9.99
+Enter quantity: 5
+Enter genre: Fiction
+
+Book added successfully!
+
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 3
+Enter the title or keyword to search: Introduction to Algorithms
+
+Title: Introduction to Algorithms
+Author: Thomas H. Cormen
+ISBN: 978-0262033848
+Price: 59.99
+Quantity: 10
+Subject: Computer Science
+
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 3
+Enter the title or keyword to search: Programming
+
+Book not found!
+
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 4
+
+Title: Introduction to Algorithms
+Author: Thomas H. Cormen
+ISBN: 978-0262033848
+Price: 59.99
+Quantity: 10
+Subject: Computer Science
+
+Title: To Kill a Mockingbird
+Author: Harper Lee
+ISBN: 978-0061120084
+Price: 9.99
+Quantity: 5
+Genre: Fiction
+
+========== Bookshop Management System ==========
+1. Add Textbook
+2. Add Novel
+3. Search Book
+4. Display Books
+5. Exit
+Enter your choice: 5
+
+Exiting... Thank you!
