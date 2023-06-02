@@ -18,8 +18,7 @@ The program should provide a menu-based interface where the user can select diff
 =>Display Books: This option displays all the books currently available in the bookshop, along with their respective details such as title, author, ISBN, price, and quantity.
 
 =>Exit: This option terminates the program.
-
-                                             EXPLANATION
+EXPLANATION:
                                              
         The code begins by including the necessary header files for input/output and strings. Three classes are defined: Book, Textbook, and Novel. The Book class is the base class, while Textbook and Novel are derived classes. The base class Book has member variables for the title, author, ISBN, price, and quantity of a book. It also has member functions to display book information and search for a book based on the title. The derived classes Textbook and Novel inherit from the Book class and add additional member variables and display functions specific to their respective types.
 
