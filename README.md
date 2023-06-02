@@ -225,34 +225,7 @@ int main() {
     return 0;
 }
 ```
-                                             SAMPLE INPUT
- 
-1
-Introduction to Algorithms
-Thomas H. Cormen
-978-0262033848
-59.99
-10
-Computer Science
-
- 2
-To Kill a Mockingbird
-Harper Lee
-978-0061120084
-9.99
-5
-Fiction
-
-3
-Introduction to Algorithms
-
-3
-Thomus
-
-4
-
-5
-                                              EXPECTED OUTPUT
+                               EXPECTED OUTPUT
                                               
 ========== Bookshop Management System ==========
 1. Add Textbook
@@ -260,12 +233,19 @@ Thomus
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 1
+
 Enter book title: Introduction to Algorithms
+
 Enter author name: Thomas H. Cormen
+
 Enter ISBN: 978-0262033848
+
 Enter price: 59.99
+
 Enter quantity: 10
+
 Enter subject: Computer Science
 
 Book added successfully!
@@ -276,12 +256,19 @@ Book added successfully!
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 2
+
 Enter book title: To Kill a Mockingbird
+
 Enter author name: Harper Lee
+
 Enter ISBN: 978-0061120084
+
 Enter price: 9.99
+
 Enter quantity: 5
+
 Enter genre: Fiction
 
 Book added successfully!
@@ -292,14 +279,21 @@ Book added successfully!
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 3
+
 Enter the title or keyword to search: Introduction to Algorithms
 
 Title: Introduction to Algorithms
+
 Author: Thomas H. Cormen
+
 ISBN: 978-0262033848
+
 Price: 59.99
+
 Quantity: 10
+
 Subject: Computer Science
 
 ========== Bookshop Management System ==========
@@ -308,7 +302,9 @@ Subject: Computer Science
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 3
+
 Enter the title or keyword to search: Programming
 
 Book not found!
@@ -319,20 +315,32 @@ Book not found!
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 4
 
 Title: Introduction to Algorithms
+
 Author: Thomas H. Cormen
+
 ISBN: 978-0262033848
+
 Price: 59.99
+
 Quantity: 10
+
 Subject: Computer Science
 
+
 Title: To Kill a Mockingbird
+
 Author: Harper Lee
+
 ISBN: 978-0061120084
+
 Price: 9.99
+
 Quantity: 5
+
 Genre: Fiction
 
 ========== Bookshop Management System ==========
@@ -341,6 +349,7 @@ Genre: Fiction
 3. Search Book
 4. Display Books
 5. Exit
+
 Enter your choice: 5
 
 Exiting... Thank you!
