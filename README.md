@@ -7,7 +7,7 @@ The system should utilize inheritance and polymorphism concepts to model differe
 
 The program should provide a menu-based interface where the user can select different options. The menu should include the following options:
 
-                                                         FEATURES
+                                                         FEATURES IN MENU
 
 =>Add Textbook: This option allows the user to add a new textbook to the bookshop. The user should be prompted to enter the title, author, ISBN, price, quantity, and subject of the textbook.
 
@@ -225,7 +225,7 @@ int main() {
     return 0;
 }
 ```
-                               EXPECTED OUTPUT
+                                              INPUT AND OUTPUT
                                               
 ========== Bookshop Management System ==========
 1. Add Textbook
